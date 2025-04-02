@@ -17,7 +17,7 @@ const LandingPage = () => {
               <div className=' w-fit flex items-center'>
             
                 
-                {index===1 && (<motion.div initial={{width:0}} animate={{width:"6vw"}} transition={{ ease: [0.76, 0, 0.24, 1],duration:1 }}  className=' !mr-[1vw]  rounded-md !mt-2  relative w-[6vw] h-[5vw] bg-[url("coding.gif")] bg-cover'></motion.div>)}
+                {index===1 && (<motion.div initial={{width:0}} animate={{width:"6vw"}} transition={{ ease: [0.76, 0, 0.24, 1],duration:1 }}  className=' !mr-[1vw]  rounded-md !mt-2  relative w-[6vw] h-[5vw] bg-[url("change.png")] bg-cover'></motion.div>)}
             <h1 className='text-[7vw] uppercase leading-[6vw] tracking-tighter font-bold font-["Oswald"]'>{elem}</h1>
             </div>
         </div>
