@@ -12,7 +12,7 @@ import Contact from './Components/Contact'
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className='w-full min-h-screen bg-zinc-200 text-black '>
+    <div className='w-full min-h-screen bg-zinc-900 '>
       <Home/>
       <LandingPage/>
       <Marquee/>
