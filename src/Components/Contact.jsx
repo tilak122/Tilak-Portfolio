@@ -8,7 +8,7 @@ const Contact = () => {
       </div>
       <div className='flex flex-col md:flex-row items-center justify-evenly mt-10 gap-10 md:gap-0'>
         <div className='text-center md:text-left'>
-          <h1 className='text-xl md:text-3xl font-["Boldon"] font-semibold tracking-tight'>tilakasthana007@gmail.com</h1>
+          <h1 className='text-xl md:text-3xl font-["Boldon"] font-semibold tracking-tight'><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=DmwnWrRsqXlqDJsPTwTjFDTvWJRSlZQWRbGGvJNjDGrLQNSXqXZKjTNLMvRHhgmZxBFZRVbDWCmV">tilakasthana007@gmail.com</a></h1>
         </div>
         <div className='flex flex-col items-center gap-5'>
           <a href="https://www.instagram.com/tilak_asthana/" className='text-[8vw] md:text-[3vw] tracking-tighter font-["Oswald"]'>Instagram</a>

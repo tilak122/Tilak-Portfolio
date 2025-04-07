@@ -11,16 +11,16 @@ const Projects = () => {
       {/* Project Cards */}
       <div className='py-10 px-6 md:px-15 grid grid-cols-1 md:grid-cols-2 gap-10'>
         <div className='w-full h-[50vh] md:h-[70vh]'>
-          <img className='w-full h-full bg-cover rounded-3xl' src='spotify.webp' alt='Spotify Project' />
+         <a href="https://github.com/tilak122/Spotify_clone"><img className='w-full h-full bg-cover rounded-3xl' src='spotify.webp' alt='Spotify Project' /></a>
         </div>
         <div className='w-full h-[50vh] md:h-[70vh]'>
-          <img className='w-full h-full bg-cover rounded-3xl' src='game.jpg' alt='Game Project' />
+        <a href="https://github.com/tilak122/action-game"><img className='w-full h-full bg-cover rounded-3xl' src='game.jpg' alt='Game Project' /></a>
         </div>
         <div className='w-full h-[50vh] md:h-[70vh]'>
-          <img className='w-full h-full bg-cover rounded-3xl' src='converter.jpg' alt='Converter Project' />
+          <a href="https://github.com/tilak122/Currency-Converter"><img className='w-full h-full bg-cover rounded-3xl' src='converter.jpg' alt='Converter Project' /></a>
         </div>
         <div className='w-full h-[50vh] md:h-[70vh]'>
-          <img className='w-full h-full bg-cover rounded-3xl' src='EWS.png' alt='EWS Project' />
+          <a href="https://github.com/tilak122/Employee-Management-System"><img className='w-full h-full bg-cover rounded-3xl' src='EWS.png' alt='EWS Project' /></a>
         </div>
       </div>
     </div>
