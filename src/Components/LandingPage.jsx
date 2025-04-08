@@ -6,26 +6,40 @@ const LandingPage = () => {
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-zinc-100 flex flex-col justify-between pt-10 px-6 md:px-20'>
       
-      {/* Heading Section */}
-      <div className='mt-32 md:mt-52 px-4 md:px-20'>
-        {['welcome', 'to my', 'portfolio'].map((elem, index) => (
-          <div key={index} className='masker'>
-            <div className='w-fit flex items-center'>
-              {index === 1 && (
-                <motion.div 
-                  initial={{ width: 0 }} 
-                  animate={{ width: '6vw' }} 
-                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                  className='mr-2 md:mr-[1vw] mt-1 md:mt-2 rounded-md relative w-[10vw] md:w-[6vw] h-[7vw] md:h-[5vw] bg-blue-600 border-2'
-                />
-              )}
-              <h1 className='text-[10vw] md:text-[7vw] uppercase leading-[8vw] md:leading-[6vw] tracking-tighter font-bold font-["Oswald"]'>
-                {elem}
-              </h1>
-            </div>
+      <div className="mt-32 md:mt-52 px-4 md:px-20">
+  <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full">
+    
+    {/* Text Content */}
+    <div className="w-full md:w-1/2 mb-10 md:mb-0">
+      {['welcome', 'to my', 'portfolio'].map((elem, index) => (
+        <div key={index} className="masker">
+          <div className="w-fit flex items-center">
+            {index === 1 && (
+              <motion.div 
+                initial={{ width: 0 }} 
+                animate={{ width: '6vw' }} 
+                transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                className="mr-2 md:mr-[1vw] mt-1 md:mt-2 rounded-md relative w-[10vw] md:w-[7vw] h-[7vw] md:h-[6vw] bg-blue-950 border-2"
+              />
+            )}
+            <h1 className="text-[10vw] md:text-[7vw] uppercase leading-[8vw] md:leading-[6vw] tracking-tighter font-bold font-['Oswald']">
+
+              {elem}
+            </h1>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Image */}
+    <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+      <div className="w-[70vw] md:w-[30vw] aspect-square bg-[url('/front.png')] bg-cover bg-center rounded-lg" />
+    </div>
+
+  </div>
+</div>
+
+  
 
       {/* Footer Section */}
       <div className='border-t-2 mt-20 md:mt-32 border-zinc-400 flex flex-col md:flex-row items-center justify-between px-4 md:px-10 py-5 text-center md:text-left'>
