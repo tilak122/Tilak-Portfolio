@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 const Skills = () => {
   return (
@@ -43,4 +43,45 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills*/
+import React from 'react';
+
+const Skills = () => {
+  const skillsData = [
+    { title: "HTML", description: "HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured." },
+    { title: "CSS", description: "CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed." },
+    { title: "JavaScript", description: "JavaScript is a scripting or programming language that allows you to implement complex features on web pages." },
+    { title: "React JS", description: "React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript." },
+    { title: "C / C++", description: "C is a structural programming language used for system applications, while C++ is an object-oriented language with features like Encapsulation and Inheritance." },
+    { title: "Python", description: "Python is a high-level programming language that lets you work quickly and integrate systems more effectively." },
+    { title: "Computer Networks", description: "A computer network is a collection of interconnected computers and devices that share resources and information over digital connections." },
+  ];
+
+  return (
+    <div id="Skills" className="w-full bg-gradient-to-r from-[#CDEA68] via-green-300 to-[#CDEA68] rounded-tl-3xl rounded-tr-3xl px-6 md:px-20 py-16 shadow-2xl">
+      {/* Heading */}
+      <h1 className="text-[8vw] md:text-[5vw] font-['Oswald'] font-bold tracking-tight text-center md:text-left text-zinc-900">
+        Skills
+      </h1>
+
+      <hr className="my-8 border-zinc-700" />
+
+      {/* Skills List */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {skillsData.map((skill, index) => (
+          <div key={index} className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+            <h2 className="text-2xl md:text-3xl font-bold text-green-800 mb-4 font-['Oswald']">
+              {skill.title}
+            </h2>
+            <p className="text-md md:text-lg text-zinc-700 leading-relaxed font-['Oswald']">
+              {skill.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Skills;
+
